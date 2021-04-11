@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kernel", "RoystonVasey\Kernel\Kernel.vcxproj", "{0B56A475-30F0-47D5-805E-9389E96ADA3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB2AAD75-4CB0-44E4-BCA4-B06CB153FDA5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		bochsrc = bochsrc
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Debug|x64.ActiveCfg = Debug|x64
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Debug|x64.Build.0 = Debug|x64
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Debug|x86.Build.0 = Debug|Win32
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Release|x64.ActiveCfg = Release|x64
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Release|x64.Build.0 = Release|x64
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Release|x86.ActiveCfg = Release|Win32
+		{0B56A475-30F0-47D5-805E-9389E96ADA3D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C344691-C46C-4A92-891B-F83620B5DD4E}
+	EndGlobalSection
+EndGlobal
