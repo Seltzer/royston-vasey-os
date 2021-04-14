@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kernel", "RoystonVasey\Kernel\Kernel.vcxproj", "{0B56A475-30F0-47D5-805E-9389E96ADA3D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB2AAD75-4CB0-44E4-BCA4-B06CB153FDA5}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		bochsrc = bochsrc
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "build", "build\build.shproj", "{28E55341-5E98-4A98-A1AE-83B2AD0FE017}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kernel", "kernel\kernel.vcxproj", "{0B56A475-30F0-47D5-805E-9389E96ADA3D}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		build\build.projitems*{28e55341-5e98-4a98-a1ae-83b2ad0fe017}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86

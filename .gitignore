@@ -55,3 +55,7 @@ dkms.conf
 .vs
 [Dd]ebug/
 *.user
+
+build/cross-compilation
+*.bin
+*.img

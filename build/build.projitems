@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>28e55341-5e98-4a98-a1ae-83b2ad0fe017</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>build</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)bochsrc.bxrc" />
+    <None Include="$(MSBuildThisFileDirectory)cross-compilation\.gitignore" />
+    <None Include="$(MSBuildThisFileDirectory)cross-compilation\activate.sh" />
+    <None Include="$(MSBuildThisFileDirectory)cross-compilation\cross-compiler.sh" />
+    <None Include="$(MSBuildThisFileDirectory)cross-compilation\LICENSE" />
+    <None Include="$(MSBuildThisFileDirectory)cross-compilation\README.md" />
+    <None Include="$(MSBuildThisFileDirectory)Makefile" />
+    <None Include="$(MSBuildThisFileDirectory)setup-env.sh" />
+  </ItemGroup>
+</Project>
