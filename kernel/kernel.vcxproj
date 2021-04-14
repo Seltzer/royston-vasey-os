@@ -19,7 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RoystonVasey.cpp" />
+    <ClCompile Include="royston-vasey.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boot\boot-loader\boot-loader.asm" />
+    <None Include="boot\boot-loader\print-string-protected.asm" />
+    <None Include="boot\boot-loader\read-kernel-from-disk.asm" />
+    <None Include="boot\boot-loader\gdt.asm" />
+    <None Include="boot\kernel-entry.asm" />
+    <None Include="boot\boot-loader\print-string.asm" />
+    <None Include="boot\boot-loader\enter-protected-mode.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -27,6 +36,7 @@
     <ProjectGuid>{0b56a475-30f0-47d5-805e-9389e96ada3d}</ProjectGuid>
     <RootNamespace>RoystonVasey</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>kernel</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,6 +85,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -96,6 +107,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>nasm $(SolutionDir)BootSector\boot-sector.asm -f bin -o $(SolutionDir)BootSector\boot-sector.bin</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

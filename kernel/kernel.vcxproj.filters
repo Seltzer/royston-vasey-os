@@ -15,8 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RoystonVasey.cpp">
+    <ClCompile Include="royston-vasey.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boot\boot-loader\read-kernel-from-disk.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\boot-loader\boot-loader.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\boot-loader\gdt.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\kernel-entry.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\boot-loader\print-string.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\boot-loader\enter-protected-mode.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="boot\boot-loader\print-string-protected.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
