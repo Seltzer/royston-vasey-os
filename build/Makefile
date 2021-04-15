@@ -6,8 +6,8 @@
 C_OBJDIR = ../out/obj/c
 
 # Filelists for kernel compilation
-C_SOURCES = $(wildcard ../kernel/*.c)
-C_HEADERS = $(wildcard ../kernel/*.h)
+C_SOURCES = $(wildcard ../kernel/*.c ../kernel/*/*.c)
+C_HEADERS = $(wildcard ../kernel/*.h ../kernel/*/*.h)
 C_OBJ = $(C_SOURCES:%.c=%.o)
 
 # Compiler stuff
