@@ -1,3 +1,6 @@
+#pragma once
+
+
 #ifndef _MSC_VER
 
 #include <float.h>

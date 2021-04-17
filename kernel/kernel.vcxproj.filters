@@ -15,7 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="royston-vasey.c">
+    <ClCompile Include="entry-point.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drivers\screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drivers\ports.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libc\libc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\util.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,5 +56,28 @@
     <None Include="boot\boot-loader\print-string-protected.asm">
       <Filter>Source Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="drivers\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="drivers\ports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\libc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\freestanding-includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libc\typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="init\init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
