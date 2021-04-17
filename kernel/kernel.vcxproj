@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="apps\terminal.c" />
+    <ClCompile Include="drivers\keyboard.c" />
     <ClCompile Include="init\init.c" />
     <ClCompile Include="libc\libc.c" />
     <ClCompile Include="drivers\ports.c" />
@@ -36,6 +38,8 @@
     <None Include="boot\boot-loader\enter-protected-mode.asm" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="apps\terminal.h" />
+    <ClInclude Include="drivers\keyboard.h" />
     <ClInclude Include="init\init.h" />
     <ClInclude Include="libc\freestanding-includes.h" />
     <ClInclude Include="libc\libc.h" />

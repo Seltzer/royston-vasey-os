@@ -33,6 +33,12 @@
     <ClCompile Include="util\util.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="drivers\keyboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apps\terminal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="boot\boot-loader\read-kernel-from-disk.asm">
@@ -77,6 +83,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="init\init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="drivers\keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apps\terminal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -83,6 +83,12 @@ void print_char(char character, int row, int col, char attr_byte)
 }
 
 
+void move_cursor(uint row, uint col) {
+	const uint pos = compute_position(row, col);
+	set_cursor_position(pos);
+}
+
+
 /*
  * Computes a position, not a memory offset
  */

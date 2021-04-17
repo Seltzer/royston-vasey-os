@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include "../libc/libc.h"
+
 
 #define VIDEO_ADDRESS 0xb8000
 #define MAX_ROWS 25
@@ -34,3 +36,6 @@ void print_char(char character, int row, int col, char attr_byte);
 
 
 void clear_screen();
+
+
+void move_cursor(uint row, uint col);
