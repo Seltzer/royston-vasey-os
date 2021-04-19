@@ -30,6 +30,12 @@ void port_word_out(unsigned short port, unsigned short data) {
 }
 
 
+void io_wait()
+{
+	// Linux does this so it's probably okay
+	asm volatile ("outb %%al, $0x80" : : "a"(0));
+}
+
 
 #else
 

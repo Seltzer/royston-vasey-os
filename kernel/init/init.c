@@ -1,6 +1,7 @@
 #include "../drivers/screen.h"
 #include "../util/util.h"
 #include "../apps/terminal.h"
+#include "../core/interrupts.h"
 #include "init.h"
 
 
@@ -11,6 +12,8 @@ static void print_even_more_stuff();
 
 
 void init() {
+    initialise_interrupts_system();
+
     clear_screen();
 
     startTerminal();
@@ -18,6 +21,9 @@ void init() {
     //print_stuff();
     //print_more_stuff();
     //print_even_more_stuff();
+
+
+    //const int result = 1 / 0;
 }
 
 

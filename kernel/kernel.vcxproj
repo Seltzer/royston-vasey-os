@@ -20,10 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="apps\terminal.c" />
+    <ClCompile Include="core\interrupts.c" />
     <ClCompile Include="drivers\keyboard.c" />
+    <ClCompile Include="drivers\pic.c" />
     <ClCompile Include="init\init.c" />
     <ClCompile Include="libc\libc.c" />
-    <ClCompile Include="drivers\ports.c" />
+    <ClCompile Include="core\ports.c" />
     <ClCompile Include="drivers\screen.c" />
     <ClCompile Include="entry-point.c" />
     <ClCompile Include="util\util.c" />
@@ -36,14 +38,17 @@
     <None Include="boot\kernel-entry.asm" />
     <None Include="boot\boot-loader\print-string.asm" />
     <None Include="boot\boot-loader\enter-protected-mode.asm" />
+    <None Include="core\interrupts.asm" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="apps\terminal.h" />
+    <ClInclude Include="core\interrupts.h" />
     <ClInclude Include="drivers\keyboard.h" />
+    <ClInclude Include="drivers\pic.h" />
     <ClInclude Include="init\init.h" />
     <ClInclude Include="libc\freestanding-includes.h" />
     <ClInclude Include="libc\libc.h" />
-    <ClInclude Include="drivers\ports.h" />
+    <ClInclude Include="core\ports.h" />
     <ClInclude Include="drivers\screen.h" />
     <ClInclude Include="libc\typedefs.h" />
     <ClInclude Include="util\util.h" />

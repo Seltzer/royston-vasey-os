@@ -21,7 +21,7 @@
     <ClCompile Include="drivers\screen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="drivers\ports.c">
+    <ClCompile Include="core\ports.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="libc\libc.c">
@@ -37,6 +37,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="apps\terminal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\interrupts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="drivers\pic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,12 +68,15 @@
     <None Include="boot\boot-loader\print-string-protected.asm">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="core\interrupts.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="drivers\screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="drivers\ports.h">
+    <ClInclude Include="core\ports.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="libc\libc.h">
@@ -89,6 +98,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="apps\terminal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\interrupts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="drivers\pic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

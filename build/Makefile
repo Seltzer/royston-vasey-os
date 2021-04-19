@@ -6,8 +6,8 @@
 C_OBJDIR = ../out/obj/c
 
 # Filelists for kernel compilation
-C_SOURCES = $(wildcard ../kernel/*.c ../kernel/*/*.c)
-C_HEADERS = $(wildcard ../kernel/*.h ../kernel/*/*.h)
+C_SOURCES = $(wildcard ../kernel/*.c ../kernel/*/*.c ../kernel/drivers/*/*.c)
+C_HEADERS = $(wildcard ../kernel/*.h ../kernel/*/*.h ../kernel/drivers/*/*.h)
 C_OBJ = $(C_SOURCES:%.c=%.o)
 
 # Compiler stuff
@@ -35,9 +35,13 @@ os.img: boot-loader.bin kernel.bin
 boot-loader.bin: ../kernel/boot/boot-loader/boot-loader.asm
 	nasm $< -f bin -I ../kernel/boot/boot-loader/ -o $@
 
-# kernel.bin = kernel entry + compiled C kernel object files
-kernel.bin: kernel-entry.o ${C_OBJ}		
+# kernel.bin = kernel entry + interrupts.o + compiled C kernel object files
+kernel.bin: kernel-entry.o interrupts.o ${C_OBJ}		
 	ld -m elf_i386 -o $@ -Ttext 0x1000 $^ --oformat binary
+
+# interrupts
+interrupts.o: ../kernel/core/interrupts.asm
+	nasm $< -f elf -o $@
 
 # kernel-entry
 kernel-entry.o: ../kernel/boot/kernel-entry.asm

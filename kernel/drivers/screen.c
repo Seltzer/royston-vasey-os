@@ -1,5 +1,5 @@
 #include "screen.h"
-#include "ports.h"
+#include "../core/ports.h"
 #include "../libc/libc.h"
 
 
@@ -28,7 +28,7 @@ void clear_screen()
 }
 
 
-void print(char* message)
+void print(const char* message)
 {
 	print_string_at(message, -1, -1);
 }
@@ -37,7 +37,7 @@ void print(char* message)
 /*
  * Terribly inefficient 
  */
-void print_string_at(char* message, int row, int col) 
+void print_string_at(const char* message, int row, int col)
 {
 	// Move cursor if user has specified a position
 	if (row >= 0 && col >= 0) 

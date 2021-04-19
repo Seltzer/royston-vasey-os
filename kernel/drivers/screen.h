@@ -17,13 +17,13 @@
 /*
  * Convenience function
  */
-void print(char* message);
+void print(const char* message);
 
 
 /*
  * Print string at specified location
  */
-void print_string_at(char* message, int row, int col);
+void print_string_at(const char* message, int row, int col);
 
 
 /*

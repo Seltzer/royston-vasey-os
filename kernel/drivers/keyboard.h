@@ -3,7 +3,5 @@
 #include "../libc/libc.h"
 
 
-/** 
- * 
- */
-uchar read_scan_code();
+
+void handle_kb_interrupt();
