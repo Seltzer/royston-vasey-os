@@ -1,0 +1,27 @@
+TODO:
+* Is scrolling correct?
+* Figure out how to debug this thing properly
+* Fix Makefile so that:
+	- We're not spraying C object files everywhere
+	- bin/obj/img files go into out
+	- We have a clean task
+* Script for creating GCC cross-compiler
+* Compile cross-compiler which targets i686-rv
+* Sort out naming conventions
+* Keyboard driver
+* More screen modes
+* Memory management
+
+ROADMAP - LATER
+* File system
+
+ROADMAP - LATER LATER
+* C lib
+* LISP interpreter
+* Cross-compiler v2
+* User mode stuff
+* Basic threading
+
+TO LOOK AT:
+* dmesg
+* Intel vol 3 system programming
